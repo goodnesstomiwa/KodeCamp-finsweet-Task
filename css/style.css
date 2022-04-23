@@ -1,0 +1,445 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.main_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5px;
+}
+
+.brand_name{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.right_section{
+    display: flex;
+    align-items: center;
+}
+
+.right_section .nav{
+    border-right: 2px solid #ccc;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav ul li{
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.road_assistance{
+    display: flex;
+    padding-left: 20px;
+}
+
+.road_assistance .icon{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.road_assistance .inner_section p{
+    font-weight: bold;
+}
+
+.road_assistance .inner_section #inner_txt{
+    color: #1E1B1B;
+    opacity: 0.7;
+}
+
+/* Hero section */
+.flex{
+    display: flex;  
+}
+
+.text_section{
+    width: 50%;
+}
+
+.img_section{
+    width: 60%;
+    background-image: url(../img/Header_image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+
+}
+
+.text_section h2{
+    font-size: 55px;
+}
+
+.orange_btn {
+    background: #FF6433;
+    border-radius: 12px;
+    padding: 16px 40px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 5px;
+    display: inline-block;
+    color: #fff;
+}
+
+.time_section {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.text_section .time_text {
+    width: 95%;
+    font-size: 14px;
+}
+
+.light-grey {
+    color: #939191;
+}
+
+.text_section .image {
+    width: 5%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time_section img {
+    width: 100%;
+}
+
+/* Quote section */
+#quote-section {
+    background: #E2E6E9;
+}
+
+#quote-section .left_section{
+    width: 50%;
+}
+
+#quote-section .left_section ul{
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+#quote-section .left_section h2 {
+    margin-bottom: 30px;
+    font-size: 38px;
+    font-family: Tahoma;
+}
+
+#quote-section .left_section .text-box p{
+    text-align: justify;
+    font-size: 13px;
+}
+
+#quote-section .left_section .text-box {
+    width: 50%;
+}
+
+#quote-section .right_form_section{
+    width: 45%;
+    margin-left: 100px;
+}
+
+#quote-section .text-box h5{
+    color: #1E1B1B;
+    font-size: 17px;
+}
+
+#quote-section .left_section .know_more{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+#quote-section .left_section .image-box{
+    width: 8%;
+    margin-right: 10px;
+}
+
+#quote-section .left_section .image-box img{
+    width: 100%;
+}
+
+#quote-section .right_form_section h3{
+    font-size: 30px;
+    font-family: Tahoma;
+    padding: 0;
+}
+
+#quote-section .right_form_section form{
+    margin-top: 30px;
+}
+
+#quote-section .right_form_section input{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 3px;
+}
+
+#quote-section .right_form_section a{
+    margin-top: 20px;
+}
+
+/* Learn Section */
+#learn_section .learn_1, #learn_section .learn_2{
+    width: 50%;
+}
+
+#learn_section .learn_1{
+  margin-top: 100px;
+}
+
+#learn_section .learn_1 h3{
+    font-size: 35px;
+    font-family: Tahoma;
+}
+
+#learn_section .learn_1 a{
+    margin-top: 10px;
+}
+
+#learn_section .learn_2{
+    margin: 40px 0;
+}
+
+#learn_section .text-box h5{
+    font-size: 17px;
+}
+
+#learn_section .learn_2 .image-box{
+    margin-right: 10px;
+}
+
+#learn_section .learn_2 .image-box .line{
+    margin-left: 35px;
+    padding: 5px 0;
+    height: 40px;
+}
+
+#learn_section .image-box .text-box{
+    justify-content: center;
+}
+
+/* Offer Section */
+#offer_section{
+    background: #E2E6E9;
+}
+
+#offer_section .hd_txt{
+    text-align: center;
+}
+
+#offer_section .inner_body{
+    padding: 60px 0 80px 0;
+}
+
+#offer_section .hd_txt h4{
+    font-size: 16px;
+}
+
+#offer_section .hd_txt p{
+    font-family: Tahoma;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#offer_section .display{
+    margin-top: 30px;
+    width: 100%;
+}
+
+#offer_section .display .box_img{
+    height: 60px;
+}
+
+#offer_section .display_1 ul{
+    display: flex;
+    padding: 0;
+}
+
+#offer_section .display_2 ul{
+    display: flex;
+    padding: 0;
+}
+
+#offer_section .display li{
+    width: 25%;
+}
+
+#offer_section .display .box{
+    background: #fff;
+    padding: 20px 70px;
+    margin: 0 4px;
+    text-align: center;
+   
+}
+
+#offer_section .display .orange_box{
+    background: #FF6433;
+    padding: 20px 70px;
+    margin: 0 4px;
+    text-align: center;
+}
+
+#offer_section .display .orange_box p{
+    color: #fff;
+}
+
+#offer_section .inner_body .learn_more{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4px;
+    font-size: 15px;
+}
+
+.arrow{
+    margin-left: 10px;
+}
+
+/* Get In Touch Section */
+#GIT_section{
+    background-color: #F2F2F2;
+}
+
+#GIT_section .bg_img{
+    display: flex;
+}
+
+#GIT_section .bg_img1{
+    background: url(../img/Car.png);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+#GIT_section .bg_img2{
+    background: url(../img/Repair.png);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+#GIT_section .touch_txt{
+    background: #FF6433;
+    height: 42vh;
+    overflow-y: hidden;
+    width: 90%;
+    padding: 30px 30px 28px 50px;
+    margin-left: 60px;
+}
+
+#GIT_section .touch_txt h2{
+    font-family: Tahoma;
+    font-size: 30px;
+    margin: 50px 0;
+    color: #fff;
+}
+
+#GIT_section .black_btn{
+    background: #1E1B1B;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#GIT_section .GIT_list ul{
+    display: flex;
+    padding: 0;
+}
+
+#GIT_section .GIT_list li{
+    width: 25%;
+}
+
+#GIT_section .GIT_section2{
+    height: 25vh;
+}
+
+#GIT_section .GIT_section2 .list_style{
+    padding: 10px 0;
+}
+
+#GIT_section .GIT_section2 .list_style h2{
+    font-weight: bold;
+    font-family: Tahoma;
+    font-size: 35px;
+    color: #661CE7;
+}
+
+#GIT_section .GIT_section2 .list_style p{
+    font-size: 18px;
+}
+
+#GIT_section .GIT_section2 .lst_list{
+    text-align: center;
+}
+
+/* Brand Section */
+#brand_section{
+    background: #FAFAFA;
+}
+
+#brand_section .brand_header{
+    font-family: Tahoma;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 60px
+}
+
+#brand_section .row1 ul{
+    display: flex;
+    padding: 0;
+}
+
+#brand_section .row1 li{
+    width: 20%;
+}
+
+#brand_section .logo{
+    width: 70%;
+}
+
+#brand_section .row2{
+    padding-bottom: 30px;
+}
+
+#brand_section .row2 ul{
+    display: flex;
+    padding: 0;
+}
+
+#brand_section .row2 li{
+    width: 20%;
+}
+
