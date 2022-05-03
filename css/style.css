@@ -589,7 +589,12 @@ a{
     }
 
     #brand_section .brand_header h2{
-        font-size: 35px;
+        font-size: 30px;
+        padding-top: 0;
+    }
+
+    #brand_section .row1 ul, #brand_section .row2 ul{
+        flex-direction: column;
     }
 
     #brand_section .row1 li{
@@ -601,6 +606,126 @@ a{
         /* width: 70%;
         margin-left: 70px;  */
         display: none;
+    }
+
+}
+
+
+/* Tablet View */
+@media (max-width:769px){
+    .right_section .nav{
+        border: 0;
+    }
+    
+    .road_assistance{
+        display: none;
+    }
+
+    .flex_sc_column{
+        flex-direction: column;
+    }
+
+    #hero_section .text_section, #hero_section .img_section{
+        width: 100%;
+    }
+
+    #hero_section .img_section{
+        padding: 0;
+        margin: 0;
+    }
+
+    #hero_section .text_section{
+        order: 2;
+    }
+
+    #hero_section .img_section{
+        order: 1;
+    }
+
+    #hero_section .text_section .image{
+        width: 7%;
+    }
+
+    #quote-section .left_section, #quote-section .right_form_section{
+        width: 100%;
+        margin: 0;
+    }
+    
+
+    #quote-section .right_form_section{
+        margin-bottom: 30px;
+    }
+
+    #quote-section .right_form_section h3 br{
+        display: none;
+    }
+
+    #quote-section .left_section h2{
+        width: 100%;
+        font-size: 33px;
+        padding-top: 20px;
+    }
+
+    #quote-section .left_section h2 br{
+        display: none;
+    }
+
+    #quote-section .left_section .text-box{
+        width: 80%;
+    }
+
+    #quote-section .left_section .image-box{
+        width: 8%;
+    }
+
+    #quote-section .text-box h5{
+        font-size: 20px;
+    }
+
+    #quote-section .left_section .text-box p{
+        font-size: 15px;
+    }
+
+    #learn_section .learn_1{
+        margin-top: 40px;
+    }
+
+    #learn_section .learn_1 h3 br{
+        display: none;
+    }
+
+    #learn_section .learn_1, #learn_section .learn_2{
+        width: 100%;
+    }
+
+    #learn_section .learn_1 p {
+        font-size: 16px;
+    }
+
+    #learn_section .learn_1 p br{
+        display: none;
+    }
+
+    #learn_section .learn_2 ul{
+        padding: 0;
+     }
+
+     #learn_section .learn_2 p{
+         font-size: 14px;
+     }
+ 
+    #learn_section .learn_2 p br{
+         display: none;   
+     }
+
+     #offer_section .display li{
+        width: 60%;
+        margin: 3px auto;
+    }
+
+    #brand_section .brand_header{
+        font-size: 22px;
+        padding-top: 40px;
     }
 
 }
