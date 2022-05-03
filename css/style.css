@@ -73,20 +73,31 @@ a{
     display: flex;  
 }
 
-.text_section{
+.flex_1{
+    display: flex;
+    align-items: center;
+}
+
+#hero_section{
+    padding-bottom: 40px;
+}
+
+#hero_section .text_section{
     width: 50%;
 }
 
-.img_section{
-    width: 60%;
+#hero_section .img_section{
     background-image: url(../img/Header_image.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 80vh;
-
+    background-position: center;
+    min-height: 60vh;
+    width: 50%;
+    padding-left: 30px;
+    margin-left: 200px;
 }
 
-.text_section h2{
+#hero_section .text_section h2{
     font-size: 55px;
 }
 
@@ -101,22 +112,22 @@ a{
     color: #fff;
 }
 
-.time_section {
+#hero_section .time_section {
     display: flex;
     align-items: center;
     margin-top: 10px;
 }
 
-.text_section .time_text {
+#hero_section .text_section .time_text {
     width: 95%;
     font-size: 14px;
 }
 
-.light-grey {
+#hero_section.light-grey {
     color: #939191;
 }
 
-.text_section .image {
+#hero_section .text_section .image {
     width: 5%;
     margin-right: 10px;
     display: flex;
@@ -124,7 +135,7 @@ a{
     justify-content: center;
 }
 
-.time_section img {
+#hero_section .time_section img {
     width: 100%;
 }
 
@@ -165,6 +176,7 @@ a{
 #quote-section .text-box h5{
     color: #1E1B1B;
     font-size: 17px;
+    padding: 0;
 }
 
 #quote-section .left_section .know_more{
@@ -328,7 +340,7 @@ a{
     background-color: #F2F2F2;
 }
 
-#GIT_section .bg_img{
+#GIT_section .GIT_section1{
     display: flex;
 }
 
@@ -338,7 +350,7 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 50%;
+    width: 20%;
 }
 
 #GIT_section .bg_img2{
@@ -352,11 +364,8 @@ a{
 
 #GIT_section .touch_txt{
     background: #FF6433;
-    height: 42vh;
-    overflow-y: hidden;
-    width: 90%;
-    padding: 30px 30px 28px 50px;
-    margin-left: 60px;
+    /*width: 90%; */
+    padding: 30px 20px 28px 50px;
 }
 
 #GIT_section .touch_txt h2{
@@ -443,3 +452,155 @@ a{
     width: 20%;
 }
 
+/* Mobile View */
+@media(max-width: 426px){
+    .main_header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right_section{
+        display: none;
+    }
+
+    .flex_sc_column{
+        flex-direction: column;
+    }
+
+    #hero_section .text_section, #hero_section .img_section{
+        width: 100%;
+    }
+
+    #hero_section .img_section{
+        padding: 0;
+        margin: 0;
+    }
+
+    #hero_section .text_section{
+        order: 2;
+    }
+
+    #hero_section .img_section{
+        order: 1;
+    }
+
+    #hero_section .text_section h2{
+        font-size: 35px;
+    }
+
+    .orange_btn{
+        padding: 12px 30px;
+    }
+
+    #hero_section .time_section{
+        margin-bottom: 30px;
+    }
+    
+    #quote-section .left_section, #quote-section .right_form_section{
+        width: 100%;
+        margin: 0;
+    }
+
+    #quote-section .right_form_section{
+        margin-bottom: 30px;
+    }
+
+    #quote-section .right_form_section h3 br{
+        display: none;
+    }
+
+    #quote-section .left_section h2{
+        width: 100%;
+        font-size: 33px;
+    }
+
+    #quote-section .left_section .text-box{
+        width: 80%;
+    }
+
+    #quote-section .left_section .image-box{
+        width: 12%;
+    }
+
+    #learn_section .learn_1, #learn_section .learn_2{
+        width: 100%;
+    }
+
+    #learn_section .learn_1{
+        margin-top: 50px;
+    }
+
+    #learn_section .learn_1 h3{
+        font-size: 35px;
+    }
+
+    #learn_section .learn_1 h3 br{
+        display: none;
+    }
+
+    #learn_section .learn_1 p br{
+        display: none;
+    }
+
+    #learn_section .learn_1 h3 p{
+        font-size: 20px;
+    }
+
+    #learn_section .learn_2 ul{
+       padding: 0;
+    }
+
+    #learn_section .learn_2 p br{
+        display: none;   
+    }
+
+    #offer_section .display li{
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    #GIT_section .bg_img1, #GIT_section .bg_img2{
+        width: 100%;
+    }
+
+    #GIT_section .GIT_section1{
+        flex-direction: column;
+    }
+
+    #GIT_section .touch_txt{
+        padding: 15px 10px 25px 25px;
+    }
+
+    #GIT_section .touch_txt h2{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    #GIT_section .touch_txt h2 br{
+        display: none;
+    }
+
+    #GIT_section .GIT_section2 .list_style h2{
+        font-size: 20px;
+    }
+
+    #GIT_section .GIT_section2 .list_style p{
+        font-size: 12px;
+    }
+
+    #brand_section .brand_header h2{
+        font-size: 35px;
+    }
+
+    #brand_section .row1 li{
+        width: 70%;
+        margin-left: 70px;
+    }
+
+    #brand_section .row2 li{
+        /* width: 70%;
+        margin-left: 70px;  */
+        display: none;
+    }
+
+}
